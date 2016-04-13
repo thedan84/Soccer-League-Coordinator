@@ -46,8 +46,8 @@ let players = [
 
 //Logic to sort experienced and unexperienced players
 
-var experiencedPlayers = [[String: AnyObject]]()
-var unexperiencedPlayers = [[String: AnyObject]]()
+var experiencedPlayers: [[String: AnyObject]] = []
+var unexperiencedPlayers: [[String: AnyObject]] = []
 
 for player in players {
     if player["hasSoccerExperience"] as! Bool == true {
