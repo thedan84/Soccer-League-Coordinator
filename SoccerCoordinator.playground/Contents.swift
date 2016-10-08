@@ -2,24 +2,24 @@ import Foundation
 
 //Create players using dicitionary syntax
 
-let joeSmith: [String: AnyObject] = ["name": "Joe Smith", "heightInInches": 42.0, "hasSoccerExperience": true, "guardianName": "Jim and Jan Smith"]
-let jillTanner: [String: AnyObject] = ["name": "Jill Tanner", "heightInInches": 36.0, "hasSoccerExperience": true, "guardianName": "Clara Tanner"]
-let billBon: [String: AnyObject] = ["name": "Bill Bon", "heightInInches": 43.0, "hasSoccerExperience": true, "guardianName": "Sara and Jenny Bon"]
-let evaGordon: [String: AnyObject] = ["name": "Eva Gordon", "heightInInches": 45.0, "hasSoccerExperience": false, "guardianName": "Wendy and Mike Gordon"]
-let mattGill: [String: AnyObject] = ["name": "Matt Gill", "heightInInches": 40.0, "hasSoccerExperience": false, "guardianName": "Charles and Sylvia Gill"]
-let kimmyStein: [String: AnyObject] = ["name": "Kimmy Stein", "heightInInches": 41.0, "hasSoccerExperience": false, "guardianName": "Bill and Hillary Stein"]
-let sammyAdams: [String: AnyObject] = ["name": "Sammy Adams", "heightInInches": 45.0, "hasSoccerExperience": false, "guardianName": "Jeff Adams"]
-let karlSaygan: [String: AnyObject] = ["name": "Karl Saygan", "heightInInches": 42.0, "hasSoccerExperience": true, "guardianName": "Heather Bledsoe"]
-let suzaneGreenberg: [String: AnyObject] = ["name": "Suzane Greenberg", "heightInInches": 44.0, "hasSoccerExperience": true, "guardianName": "Henrietta Dumas"]
-let salDali: [String: AnyObject] = ["name": "Sal Dali", "heightInInches": 41.0, "hasSoccerExperience": false, "guardianName": "Gala Dali"]
-let joeKavalier: [String: AnyObject] = ["name": "Joe Kavalier", "heightInInches": 39.0, "hasSoccerExperience": false, "guardianName": "Sam and Elaine Kavalier"]
-let benFinkelstein: [String: AnyObject] = ["name": "Ben Finkelstein", "heightInInches": 44.0, "hasSoccerExperience": false, "guardianName": "Aaron and Jill Finkelstein"]
-let diegoSoto: [String: AnyObject] = ["name": "Diego Soto", "heightInInches": 41.0, "hasSoccerExperience": true, "guardianName": "Robin and Sarika Soto"]
-let chloeAlaska: [String: AnyObject] = ["name": "Chloe Alaske", "heightInInches": 47.0, "hasSoccerExperience": false, "guardianName": "Davind and Jamie Alaska"]
-let arnoldWillis: [String: AnyObject] = ["name": "Arnold Willis", "heightInInches": 43.0, "hasSoccerExperience": false, "guardianName": "Claire Willis"]
-let phillipHelm: [String: AnyObject] = ["name": "Phillip Helm", "heightInInches": 44.0, "hasSoccerExperience": true, "guardianName": "Thomas Helm and Eva Jones"]
-let lesClay: [String: AnyObject] = ["name": "Les Clay", "heightInInches": 42.0, "hasSoccerExperience": true, "guardianName": "Wynonna Brown"]
-let herschelKrustofski: [String: AnyObject] = ["name": "Herschel Krustofski", "heightInInches": 45.0, "hasSoccerExperience": true, "guardianName": "Hyman and Rachel Krustofski"]
+let joeSmith: [String: Any] = ["name": "Joe Smith", "heightInInches": 42.0, "hasSoccerExperience": true, "guardianName": "Jim and Jan Smith"]
+let jillTanner: [String: Any] = ["name": "Jill Tanner", "heightInInches": 36.0, "hasSoccerExperience": true, "guardianName": "Clara Tanner"]
+let billBon: [String: Any] = ["name": "Bill Bon", "heightInInches": 43.0, "hasSoccerExperience": true, "guardianName": "Sara and Jenny Bon"]
+let evaGordon: [String: Any] = ["name": "Eva Gordon", "heightInInches": 45.0, "hasSoccerExperience": false, "guardianName": "Wendy and Mike Gordon"]
+let mattGill: [String: Any] = ["name": "Matt Gill", "heightInInches": 40.0, "hasSoccerExperience": false, "guardianName": "Charles and Sylvia Gill"]
+let kimmyStein: [String: Any] = ["name": "Kimmy Stein", "heightInInches": 41.0, "hasSoccerExperience": false, "guardianName": "Bill and Hillary Stein"]
+let sammyAdams: [String: Any] = ["name": "Sammy Adams", "heightInInches": 45.0, "hasSoccerExperience": false, "guardianName": "Jeff Adams"]
+let karlSaygan: [String: Any] = ["name": "Karl Saygan", "heightInInches": 42.0, "hasSoccerExperience": true, "guardianName": "Heather Bledsoe"]
+let suzaneGreenberg: [String: Any] = ["name": "Suzane Greenberg", "heightInInches": 44.0, "hasSoccerExperience": true, "guardianName": "Henrietta Dumas"]
+let salDali: [String: Any] = ["name": "Sal Dali", "heightInInches": 41.0, "hasSoccerExperience": false, "guardianName": "Gala Dali"]
+let joeKavalier: [String: Any] = ["name": "Joe Kavalier", "heightInInches": 39.0, "hasSoccerExperience": false, "guardianName": "Sam and Elaine Kavalier"]
+let benFinkelstein: [String: Any] = ["name": "Ben Finkelstein", "heightInInches": 44.0, "hasSoccerExperience": false, "guardianName": "Aaron and Jill Finkelstein"]
+let diegoSoto: [String: Any] = ["name": "Diego Soto", "heightInInches": 41.0, "hasSoccerExperience": true, "guardianName": "Robin and Sarika Soto"]
+let chloeAlaska: [String: Any] = ["name": "Chloe Alaske", "heightInInches": 47.0, "hasSoccerExperience": false, "guardianName": "Davind and Jamie Alaska"]
+let arnoldWillis: [String: Any] = ["name": "Arnold Willis", "heightInInches": 43.0, "hasSoccerExperience": false, "guardianName": "Claire Willis"]
+let phillipHelm: [String: Any] = ["name": "Phillip Helm", "heightInInches": 44.0, "hasSoccerExperience": true, "guardianName": "Thomas Helm and Eva Jones"]
+let lesClay: [String: Any] = ["name": "Les Clay", "heightInInches": 42.0, "hasSoccerExperience": true, "guardianName": "Wynonna Brown"]
+let herschelKrustofski: [String: Any] = ["name": "Herschel Krustofski", "heightInInches": 45.0, "hasSoccerExperience": true, "guardianName": "Hyman and Rachel Krustofski"]
 
 //Create array of players
 
@@ -46,8 +46,8 @@ let players = [
 
 //Logic to sort experienced and unexperienced players
 
-var experiencedPlayers: [[String: AnyObject]] = []
-var unexperiencedPlayers: [[String: AnyObject]] = []
+var experiencedPlayers: [[String: Any]] = []
+var unexperiencedPlayers: [[String: Any]] = []
 
 for player in players {
     if player["hasSoccerExperience"] as! Bool == true {
@@ -59,9 +59,9 @@ for player in players {
 
 //Create team dictionaries
 
-var dragons: [[String: AnyObject]] = []
-var sharks: [[String: AnyObject]] = []
-var raptors: [[String: AnyObject]] = []
+var dragons: [[String: Any]] = []
+var sharks: [[String: Any]] = []
+var raptors: [[String: Any]] = []
 
 var teams = [dragons, sharks, raptors]
 
