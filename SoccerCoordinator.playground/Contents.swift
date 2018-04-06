@@ -50,10 +50,11 @@ var experiencedPlayers: [[String: Any]] = []
 var unexperiencedPlayers: [[String: Any]] = []
 
 for player in players {
-    if player["hasSoccerExperience"] as! Bool == true {
-        experiencedPlayers.append(player)
-    } else {
-        unexperiencedPlayers.append(player)
+    guard let isExperienced = player["hasSoccerExperience"] as? Bool else { break }
+    
+    switch isExperienced {
+    case true: experiencedPlayers.append(player)
+    case false: unexperiencedPlayers.append(player)
     }
 }
 
