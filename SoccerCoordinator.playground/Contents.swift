@@ -95,16 +95,28 @@ for unexperiencedPlayer in unexperiencedPlayers {
 
 //Create personal letters to parents of the players
 
-for dragonPlayer in dragons {
-    print("Dear \(dragonPlayer["guardianName"] as! String),\n\(dragonPlayer["name"] as! String) was selected to play for the Dragons. We would like to welcome our new star at the first team practice on March 17, at 1 pm.\nDennis Parussini,\nHead Coach.")
+var letters = [String]()
+
+func createLetters(for team: String, with players: [[String: Any]]) {
+    for player in players {
+        if let guardians = player["guardianName"] as? String, let name = player["name"] as? String {
+            
+            let letter = """
+            Dear \(guardians),
+            \(name) was selected to play for the \(team). We would like to welcome our new star at the first team practice on March 17, at 1 pm.
+            Dennis Parussini,
+            Head Coach.
+            """
+            
+            letters.append(letter)
+        }
+    }
 }
 
-for sharkPlayer in sharks {
-    print("Dear \(sharkPlayer["guardianName"] as! String),\n\(sharkPlayer["name"] as! String) was selected to play for the Sharks. We would like to welcome our new star at the first team practice on March 17, at 3 pm.\nDennis Parussini,\nHead Coach.")
+createLetters(for: "Dragons", with: dragons)
+createLetters(for: "Raptors", with: raptors)
+createLetters(for: "Sharks", with: sharks)
+
+for letter in letters {
+    print(letter)
 }
-
-for raptorsPlayer in raptors {
-    print("Dear \(raptorsPlayer["guardianName"] as! String),\n\(raptorsPlayer["name"] as! String) was selected to play for the Raptors. We would like to welcome our new star at the first team practice on March 18, at 1 pm.\nDennis Parussini,\nHead Coach.")
-}
-
-
