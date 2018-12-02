@@ -118,5 +118,5 @@ createLetters(for: "Raptors", with: raptors)
 createLetters(for: "Sharks", with: sharks)
 
 for letter in letters {
-    print(letter)
+    print("\(letter)\n")
 }
